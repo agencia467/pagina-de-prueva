@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Erotics</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="ingresar.php">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section id="inicio" class="carousel">
+        <div class="carousel-container">
+            <img class="carousel-img active" src="img1.png"
+                alt="Celular 1">
+            <img class="carousel-img" src="img2.png"
+                alt="Celular 2">
+            <img class="carousel-img" src="img3.png"
+                alt="Celular 3">
+        </div>
+        <div class="carousel-buttons">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div class="productos">
+
+
+            <div class="producto" onclick="abrirpaginadeedecansofi()">
+                <img src="image-removebg-preview (1).png" alt="Celular Modelo 1">
+                <h3>
+                    sofi
+                </h3>
+            </div>
+            <div class="producto" onclick="abrirpaginadeedecandany()">
+                <img src="image-removebg-preview (3).png" alt="Celular Modelo 1">
+                <h3>
+                    Dany
+                </h3>
+            </div>
+
+            <script>
+                function abrirpaginadeedecansofi () {
+                  
+
+                    // Redirigir a la página PHP con la variable como parámetro GET
+                    window.location.href = `edecansofi.html`;
+
+                }
+            </script>
+
+           
+
+        </div>
+    </section>
+
+    <!-- Ventana Modal -->
+   
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Agenda una cita</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nombre">Celular:</label>
+            <input type="text" id="celular" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nombre">Fecha:</label>
+            <input type="date" id="fecha" name="nombre" required>
+
+            <label for="sucursal">Sucursal:</label>
+            <select name="" id="">
+                <option value="0">Seleciona una sucursal</option>
+                <option value="1">
+                    (MI PLAZA SOLUCIONES)
+                    Av. 16 de Septiembre 151, Zona Centro, 44100 Guadalajara, Jal
+                    Local 12 y 13
+                </option>
+                <option value="2">
+                    (PLAZA DE LA TECNOLOGIA CENTRO SUR)
+                    Anillo Perif. Sur Manuel Gómez Morín, 7835Santa María Tequepexpan45650 45650 45650, 45598 San Pedro
+                    Tlaquepaque, Jal.
+                </option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venta de Celulares. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
